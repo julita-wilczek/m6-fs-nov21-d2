@@ -6,3 +6,6 @@ This is a backend project using NodeJS + Express + Postgres.
 Features:
 - CRUD for Products ( /products GET, POST, DELETE, PUT)
 - Extra method for product's image upload (POST /product/:id/upload) (to be completed)
+
+### `npm run dev`
+Runs the server in the development mode.
