@@ -61,14 +61,16 @@ productsRouter.delete("/:product_id", async (req, res, next) => {
         res.status(500).send({message: error.message})
     }
 })
-productsRouter.post("/:product_id/upload", async (req, res, next) => {
-    try {
-        const data = await pool.query("")
-        res.send(data)
-    } catch(error) {
-        console.log(error)
-        res.status(500).send({message: error.message})
-    }
-})
+
+// // not fully completed
+// productsRouter.post("/:product_id/upload", async (req, res, next) => {
+//     try {
+//         const data = await pool.query("")
+//         res.send(data)
+//     } catch(error) {
+//         console.log(error)
+//         res.status(500).send({message: error.message})
+//     }
+// })
 
 export default productsRouter
